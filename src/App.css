@@ -1,0 +1,378 @@
+#father {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#home {
+  position: relative;
+  height: 80vh;
+  /* overflow: hidden; */
+  background-color: beige;
+  background: url('src/assets/IN-en-20240610-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 10vw;
+  z-index: 1;
+}
+
+#logo {
+  height: 80px;
+  position: relative;
+}
+
+#logo img {
+  height: 100%;
+}
+
+.shadow {
+  background: rgb(0 0 0 / 40%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
+
+.nav {
+  display: flex;
+}
+
+#drop {
+  background-color: #151313;
+  color: white;
+  border: 2px solid #5E5E5E;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 10px;
+  margin-right: 1vw;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: red;
+  border-radius: 5px;
+
+}
+
+.btn .but {
+  text-transform: uppercase;
+  padding: 5px 15px;
+  color: white;
+  font-weight: 700;
+}
+
+#content {
+  overflow: hidden;
+  margin: auto;
+  height: 85%;
+  max-width: calc(100% - 3rem);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  /* background-color: #5E5E5E; */
+}
+
+#content>div {
+  flex-basis: 50%;
+  padding: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+#content h1 {
+  font-size: 4vw;
+  font-weight: 700;
+}
+
+#content h3 {
+  font-size: 1.3vw;
+  font-weight: 400;
+  margin: 0.7vw 0;
+}
+
+#input-field {
+  display: flex;
+  /* flex-direction: column; */
+  text-align: left;
+  position: relative;
+  margin: 1.5rem auto 0;
+  width: 100%;
+  max-width: 40.625rem;
+  align-items: center;
+}
+
+#field-mail {
+  position: relative;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#input-field input {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  width: 100%;
+  padding: 0.8vw 2vw;
+  background-color: #151313;
+  border: 1px solid #5E5E5E;
+  border-radius: 5px;
+}
+
+#input-field #btn {
+  margin-left: 0.8vw;
+  background-color: red;
+  font-weight: 700;
+  padding: 1vw 2vw;
+  border-radius: 5px;
+  width: 30%;
+}
+
+#gap {
+  height: 0.5vw;
+  background-color: #5E5E5E;
+}
+
+.card {
+  overflow: hidden;
+  height: 53vh;
+  background-color: black;
+}
+
+.card-center {
+  overflow: hidden;
+  margin: auto;
+  max-width: calc(100% - 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* flex-direction: column; */
+  text-align: center;
+  color: white;
+  flex-basis: 50%;
+  padding: 0;
+  z-index: 1;
+}
+
+.text {
+  width: 30%;
+  text-align: left;
+  margin-left: 2vw;
+}
+
+.text h1 {
+  font-size: 3.5vw;
+  font-weight: 700;
+}
+
+.text h3 {
+  font-size: 1.5vw;
+  font-weight: 400;
+  margin: 0.7vw 0;
+}
+
+#tv {
+  position: relative;
+}
+
+#video1 {
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 99%;
+  max-width: 73%;
+  max-height: 55%;
+  position: absolute;
+  top: 48%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+
+}
+
+#video1 video {
+  object-fit: contain;
+  overflow: clip;
+}
+
+.card2-container {
+  position: relative;
+}
+
+.card2-container img {
+  width: 100%;
+}
+
+.download {
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  min-width: 15rem;
+  padding: 1rem 0.65rem;
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+  border-radius: 0.75rem;
+  z-index: 1;
+}
+
+.download img {
+  height: 3rem;
+  width: 3rem;
+}
+
+#text-download {
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0.3rem 0;
+}
+
+#text-download div {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+#text-downlaod div:nth-child(1) {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #0071eb
+}
+
+.animate {
+  width: 3rem;
+  height: 3rem;
+  outline: 2px solid rgb(0, 0, 0);
+  outline-offset: -2px;
+  display: block;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  content: '';
+  /* flex-grow: 0;
+  flex-shrink: 0; */
+}
+
+.query {
+  height: 88vh;
+  width: 100%;
+  background-color: black;
+}
+
+.query-card {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 2vw 0;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  color: white;
+}
+
+.queries {
+  width: 75%;
+}
+
+.queries h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.queries h3 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.customer-query ul li {
+  cursor: pointer;
+  /* width: 100%; */
+  font-weight: 400;
+  font-size: 1.5vw;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  list-style-type: none;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 1.5vw;
+  margin: 0 0 0.5rem 0;
+  background-color: #5E5E5E;
+}
+
+/* #query-answer{
+  display: none;
+} */
+.signIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-image: url('src/assets/IN-en-20240610-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+}
+
+.signInBox {
+  /* flex-grow: 1; */
+  color: white;
+  margin: 0 auto;
+  padding: 5% 5%;
+  height: 75vh;
+  width: 35%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.signInBox input {
+  margin: 1vw 0;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  width: 100%;
+  padding: 0.8vw 2vw;
+  background-color: #151313;
+  border: 1px solid #5E5E5E;
+  border-radius: 5px;
+}
+.signInBox input[type="checkbox"] {
+  width: 10%;
+}
+.signInBox .btns{
+  margin: 0.8vw 0;
+  background-color: red;
+  font-weight: 700;
+  padding: 1vw 2vw;
+  border-radius: 5px;
+  width: 100%;
+}
+.signInBox h1{
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.signInBox h2{
+  font-size: 1.2rem;
+  text-align: center;
+}
+
